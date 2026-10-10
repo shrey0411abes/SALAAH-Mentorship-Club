@@ -1,0 +1,321 @@
+/* ==========================================================================
+   CONNECT & CONTACT SECTION STYLES
+   ========================================================================== */
+
+.connect-section {
+  padding: 5.5rem 0 6rem;
+  background-color: var(--paper);
+  position: relative;
+}
+
+/* 4 Social Cards */
+.socials-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.75rem;
+  margin-bottom: 4rem;
+}
+
+.social-card {
+  padding: 1.85rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-light);
+  background: var(--surface);
+  text-decoration: none;
+  transition: transform var(--transition-base), box-shadow var(--transition-base), border-color var(--transition-base);
+}
+
+.social-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-hover);
+  border-color: var(--border-gold);
+}
+
+.social-icon-box {
+  width: 48px;
+  height: 48px;
+  border-radius: var(--radius-sm);
+  background: rgba(139, 26, 26, 0.08);
+  color: var(--maroon);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  transition: background-color var(--transition-fast), color var(--transition-fast);
+}
+
+.social-card:hover .social-icon-box {
+  background: var(--maroon);
+  color: #FFFFFF;
+}
+
+.social-name {
+  font-family: var(--font-serif);
+  color: var(--ink);
+  font-size: 1.15rem;
+  font-weight: 800;
+  margin-bottom: 0.15rem;
+}
+
+.social-handle {
+  display: block;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--maroon);
+  margin-bottom: 0.5rem;
+}
+
+.social-desc {
+  font-size: 0.85rem;
+  color: var(--muted);
+  line-height: 1.5;
+}
+
+/* Connect Interactive Grid: Registration Portal Card + Campus Info */
+.connect-interactive-grid {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 2.5rem;
+  align-items: stretch;
+}
+
+.join-hub-wrapper {
+  padding: 2.5rem;
+  background: var(--surface);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-light);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+.hub-head {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.hub-icon-box {
+  width: 52px;
+  height: 52px;
+  border-radius: var(--radius-sm);
+  background: rgba(139, 26, 26, 0.1);
+  color: var(--maroon);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.45rem;
+}
+
+.form-title {
+  font-family: var(--font-serif);
+  color: var(--maroon-dark);
+  font-size: 1.35rem;
+  font-weight: 800;
+  margin-bottom: 0.25rem;
+}
+
+.form-subtitle {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--muted);
+}
+
+.hub-desc {
+  font-size: 0.98rem;
+  line-height: 1.7;
+  color: var(--muted);
+}
+
+.hub-action-box {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid rgba(90, 80, 72, 0.1);
+}
+
+.hub-btn {
+  width: fit-content;
+  padding: 0.9rem 2.2rem;
+  font-size: 1rem;
+}
+
+.hub-notice {
+  font-size: 0.78rem;
+  color: var(--muted);
+}
+
+/* Campus Headquarters Card */
+.campus-info-card {
+  padding: 2.5rem;
+  background: var(--paper-card);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-light);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.campus-head {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.campus-icon-box {
+  width: 48px;
+  height: 48px;
+  border-radius: var(--radius-sm);
+  background: rgba(139, 26, 26, 0.1);
+  color: var(--maroon);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.35rem;
+}
+
+.campus-title {
+  font-family: var(--font-serif);
+  color: var(--maroon-dark);
+  font-size: 1.25rem;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.campus-sub {
+  font-size: 0.82rem;
+  color: var(--maroon);
+  font-weight: 700;
+}
+
+.campus-preview-card {
+  position: relative;
+  border-radius: var(--radius-sm);
+  overflow: clip;
+  border: 1px solid var(--border-light);
+  box-shadow: var(--shadow-sm);
+}
+
+.campus-preview-img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  display: block;
+  transition: transform var(--transition-base);
+}
+
+.campus-preview-card:hover .campus-preview-img {
+  transform: scale(1.03);
+}
+
+.campus-preview-link {
+  position: absolute;
+  bottom: 0.65rem;
+  right: 0.65rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  background: rgba(17, 17, 17, 0.82);
+  backdrop-filter: blur(6px);
+  color: #FFFFFF;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 0.3rem 0.65rem;
+  border-radius: var(--radius-pill);
+  border: 1px solid rgba(232, 163, 23, 0.4);
+  transition: all var(--transition-fast);
+}
+
+.campus-preview-link:hover {
+  background: var(--maroon);
+  color: #FFFFFF;
+  border-color: var(--gold);
+}
+
+.link-ext-icon {
+  font-size: 0.68rem;
+}
+
+.campus-desc {
+  font-size: 0.95rem;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.campus-details-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+  border-top: 1px solid rgba(90, 80, 72, 0.12);
+  border-bottom: 1px solid rgba(90, 80, 72, 0.12);
+  padding: 1.25rem 0;
+}
+
+.campus-detail-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  font-size: 0.88rem;
+}
+
+.campus-detail-item strong {
+  color: var(--maroon-dark);
+  font-weight: 700;
+}
+
+.campus-detail-item span,
+.campus-detail-item a {
+  color: var(--muted);
+}
+
+.campus-detail-item a:hover {
+  color: var(--maroon);
+  text-decoration: underline;
+}
+
+.campus-badge-box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.campus-pill {
+  font-size: 0.76rem;
+  font-weight: 700;
+  padding: 0.35rem 0.75rem;
+  border-radius: var(--radius-pill);
+  background: rgba(139, 26, 26, 0.08);
+  color: var(--maroon-dark);
+  border: 1px solid rgba(139, 26, 26, 0.2);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .socials-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .connect-interactive-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .socials-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .join-hub-wrapper,
+  .campus-info-card {
+    padding: 1.75rem 1.25rem;
+  }
+
+  .hub-btn {
+    width: 100%;
+  }
+}

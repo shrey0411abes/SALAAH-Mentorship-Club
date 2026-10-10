@@ -1,0 +1,118 @@
+/* ==========================================================================
+   PROGRAMS & INITIATIVES SECTION STYLES
+   ========================================================================== */
+
+.programs-section {
+  padding: 5.5rem 0 6rem;
+  background-color: var(--surface);
+  position: relative;
+}
+
+.programs-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2.25rem;
+}
+
+.program-card {
+  padding: 2.25rem 2.25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-light);
+  background: var(--paper-card);
+}
+
+.program-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-bottom: 1.25rem;
+}
+
+.program-tags {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.category-tag {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--maroon-dark);
+  background: rgba(139, 26, 26, 0.08);
+  padding: 0.25rem 0.65rem;
+  border-radius: var(--radius-pill);
+  border: 1px solid rgba(139, 26, 26, 0.15);
+  letter-spacing: 0.03em;
+}
+
+.badge-tag {
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--maroon-dark);
+  background: rgba(139, 26, 26, 0.06);
+  border: 1px solid rgba(139, 26, 26, 0.18);
+  padding: 0.25rem 0.65rem;
+  border-radius: var(--radius-pill);
+}
+
+.program-title {
+  font-family: var(--font-serif);
+  color: var(--ink);
+  font-size: 1.35rem;
+  font-weight: 800;
+  margin-bottom: 0.75rem;
+}
+
+.program-desc {
+  font-size: 0.98rem;
+  line-height: 1.65;
+  color: var(--muted);
+  margin-bottom: 1.75rem;
+}
+
+.program-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid rgba(90, 80, 72, 0.1);
+}
+
+.program-metric {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: var(--maroon-dark);
+}
+
+.metric-icon {
+  color: var(--maroon);
+}
+
+.program-btn {
+  padding: 0.5rem 1.25rem;
+  font-size: 0.88rem;
+}
+
+.btn-external-icon {
+  font-size: 0.78rem;
+  margin-left: 0.35rem;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .programs-grid {
+    grid-template-columns: 1fr;
+  }
+}
